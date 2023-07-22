@@ -9,7 +9,7 @@ example_interfaces::srv::AddTwoInts_Response::SharedPtr send_request(
   example_interfaces::srv::AddTwoInts_Request::SharedPtr request)
 {
     auto result = client->async_send_request(request);
-    // 等待服务处理结果  add some comment  more comment
+    // 等待服务处理结果  add some comment  more comment  more more comment
     if (rclcpp::spin_until_future_complete(node, result) ==
     rclcpp::executor::FutureReturnCode::SUCCESS)
     {
